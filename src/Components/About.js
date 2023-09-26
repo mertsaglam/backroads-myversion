@@ -23,7 +23,14 @@ const About = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#" className="btn" target="_blank" rel="noreferrer">
+          <a
+            href="#"
+            className="btn"
+            onClick={(e) => {
+              e.preventDefault(); // Prevents the default behavior of the link
+              // Handle the click event here (e.g., scroll to a section)
+            }}
+          >
             read more
           </a>
         </article>
